@@ -1,0 +1,41 @@
+{
+  "name": "tl-api",
+  "version": "1.0.0",
+  "description": "Web services Tasty life",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development nodemon --exec babel-node src/",
+    "start-prod": "NODE_ENV=production babel-node src/",
+    "build": "NODE_ENV=production babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dimak04/tl-api.git"
+  },
+  "author": "Kotlyarov Dmitry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dimak04/tl-api/issues"
+  },
+  "homepage": "https://github.com/dimak04/tl-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "joi": "^14.3.1",
+    "mssql": "^5.1.0",
+    "path": "^0.12.7",
+    "pg": "^7.12.1",
+    "sequelize": "^5.10.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "babel-loader": "^8.0.6"
+  }
+}
